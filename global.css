@@ -1,0 +1,87 @@
+.card {
+    display: grid;
+    grid-template-rows: 3fr auto auto;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    width: 200px;
+    height: 250px;
+    align-items: center;
+    padding: 15px 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    padding: 20px 10px;
+    display: flex;
+    height: auto;
+}
+
+.container> *:first-child {
+    flex: 3;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.container > *:last-child{
+    flex: 1;
+}
+
+#form__produto {
+    position: relative;
+    top: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h3 {
+    font-size: 19px;
+    text-align: center;
+}
+
+p {        
+    font-size: 14px;
+    text-align: center;
+}
+
+
+/* Form */
+form {
+    max-width: 400px;
+}
+label {
+    display: block;
+    margin-top: 10px;
+}
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    box-sizing: border-box;
+}
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
