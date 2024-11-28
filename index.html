@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="global.css">
+    <title>Produtos</title>
+</head>
+<body>
+    <main class="container">
+        <section id="produtos__container">    
+        </section>
+        <form id="form__produto">
+            <label for="titulo">Título*:</label>
+            <input type="text" id="titulo" name="titulo" placeholder="Titulo do produto" required>
+    
+            <label for="preco">Preço*:</label>
+            <input type="number" id="preco" name="preco" placeholder="Preço do produto" step="0.01" required>
+    
+            <label for="imagem">Imagem (URL):</label>
+            <input type="text" id="imagem" name="imagem" placeholder="URL da imagem" >
+    
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
